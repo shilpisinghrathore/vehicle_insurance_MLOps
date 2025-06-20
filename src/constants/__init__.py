@@ -1,10 +1,15 @@
 import os
 from datetime import date
+from dotenv import load_dotenv
+from pathlib import Path
+
+env_path = Path(__file__).resolve().parents[2] / ".env"
+load_dotenv(dotenv_path=env_path)
 
 # For MongoDB connection
 DATABASE_NAME = "Proj1"
 COLLECTION_NAME = "Proj1-Data"
-MONGODB_URL_KEY = "MONGODB_URL"
+MONGODB_URL_KEY ="MONGODB_URL"
 
 PIPELINE_NAME: str = ""
 ARTIFACT_DIR: str = "artifact"

@@ -4,9 +4,6 @@ FROM python:3.10-slim-buster
 # Set the working directory
 WORKDIR /app
 
-COPY .env /app/.env
-
-
 # Copy your application code
 COPY . /app
 #COPY . .

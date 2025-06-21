@@ -6,10 +6,10 @@ from fastapi.templating import Jinja2Templates
 from starlette.responses import HTMLResponse, RedirectResponse
 from uvicorn import run as app_run
 
-from dotenv import load_dotenv
-from pathlib import Path
+# from dotenv import load_dotenv
+# from pathlib import Path
 
-load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
+# load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
 
 from typing import Optional
 

@@ -1,5 +1,6 @@
 ipykernel
 pandas
+python-dotenv
 numpy
 matplotlib
 plotly

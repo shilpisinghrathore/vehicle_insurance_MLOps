@@ -5,7 +5,8 @@ FROM python:3.10-slim-buster
 WORKDIR /app
 
 # Copy your application code
-COPY . /app
+#COPY . /app
+COPY . .
 
 # Install the dependencies
 RUN pip install -r requirements.txt
@@ -15,4 +16,4 @@ EXPOSE 5000
 
 # Command to run the FastAPI app
 CMD ["python3", "app.py"]
-# CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
+#CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "5000"]
